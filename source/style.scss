@@ -37,7 +37,7 @@
   }
 
   &__content {
-    background-image: url(/img/header_bg.png);
+    background-image: url(../img/header_bg.png); 
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -49,7 +49,7 @@
     align-items: center;
     &::before{
       content: '';
-      background-image: url(/img/mercedes-icon.svg);
+      background-image: url(../img/mercedes-icon.svg);
       width: 50px;
       height: 50px;
       position: absolute;
