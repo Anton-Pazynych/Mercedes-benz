@@ -16,11 +16,16 @@
   }
 
   &__button {
-    transition: 1s ease all;
+  }
+
+  &__button-img{
+    transition: .5s all ease;
     &:hover{
-      transform: scale(1.1);
-      transform: rotate(-5deg);
+      background-color: #53a1cb2c;
+      transform: scale(1.05);
+      box-shadow: 0 0 30px $hover_1;
     }
+
   }
 
   &__logo {

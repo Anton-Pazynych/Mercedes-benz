@@ -232,15 +232,16 @@ button {
     height: 80px;
   }
 }
-.header__button {
-  -webkit-transition: 1s ease all;
-  transition: 1s ease all;
+.header__button-img {
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
 }
-.header__button:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transform: rotate(-5deg);
-          transform: rotate(-5deg);
+.header__button-img:hover {
+  background-color: #53a1cb2c;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-shadow: 0 0 30px #53A1CB;
+          box-shadow: 0 0 30px #53A1CB;
 }
 @media (max-width: 479.98px) {
   .header__logo {
