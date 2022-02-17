@@ -248,7 +248,7 @@ button {
   }
 }
 .header__content {
-  background-image: url(/img/header_bg.png);
+  background-image: url("../img/header_bg.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -271,8 +271,8 @@ button {
           animation-name: bring;
   -webkit-animation-duration: 7s;
           animation-duration: 7s;
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
   -webkit-animation-timing-function: ease;
           animation-timing-function: ease;
   -webkit-animation-iteration-count: infinite;
@@ -284,7 +284,7 @@ button {
 }
 .header__content::before {
   content: "";
-  background-image: url(/img/mercedes-icon.svg);
+  background-image: url("../img/mercedes-icon.svg");
   width: 50px;
   height: 50px;
   position: absolute;
