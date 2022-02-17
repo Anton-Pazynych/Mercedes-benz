@@ -1,0 +1,142 @@
+//------Breakpoints
+
+$breakpoints1400: 1339.98+px;
+$breakpoints992: 991.98+px;
+$breakpoints768: 768.98+px;
+$breakpoints488: 479.98+px;
+$breakpoints375: 374.98+px;
+
+
+//-----Colors
+
+$withe: #fff;
+$dark: #070A1B;
+$pink: #F402A2;
+$hover_1: #53A1CB;
+$hover_2: #53A1CB;
+
+
+//-----Fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+@font-face {
+  font-family: 'Corporate-A-Bold';
+  font-style: normal;
+  font-weight: 700;
+  src: url(/fonts/Corporate-A-Bold.woff2) format('woff2'),
+       url(/fonts/Corporate-A-Bold.woff) format('woff'); 
+}
+
+
+// Global style
+.text {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 120%;
+  color: #FFFFFF;
+}
+
+.title {
+  font-family: 'Corporate-A-Bold';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 120%;
+  color: $pink;
+}
+
+
+.btc {
+  font-family: 'Corporate-A-Bold';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 120%;
+  color: $pink;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  border: 1px solid $pink;
+  padding: 14px 0;
+  transition: all 1s ease;
+  &:hover{
+    color: $hover_1;
+    border: 1px solid $hover_1;
+    box-shadow: 0 0 15px $hover_1;
+    transform: scale(1.01);
+  }
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+
+.container {
+  max-width: 1260px;  
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+.logo {
+  transition: 1s ease all; 
+  &:hover{
+    transform: scale(1.05);
+  }
+
+  @media(max-width:$breakpoints992){
+    width: 200px;
+  }
+  @media(max-width:$breakpoints488){
+    width: 150px;
+  }
+    
+}
+
+.social {
+  display: flex;
+  gap: 30px;
+  @media(max-width:$breakpoints992){
+    gap: 20px;
+  }
+  @media(max-width:$breakpoints488){
+    gap: 10px;
+  }
+  
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 20%;
+    transition: 1s ease all;
+    &:hover{
+      border-radius: 50%;
+      background-color: $hover_2;
+      box-shadow: 0 0 50px $hover_1;
+      transform: scale(1.2);
+    }
+  }
+}
+
+
+
+@keyframes bring{
+
+  0%{
+    transform: scale(1.0);
+  }
+  100%{
+    transform: scale(0.98);
+  }
+}
+
+
+
