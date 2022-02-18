@@ -774,14 +774,12 @@ button {
 .slider__item {
   padding: 0 20px;
 }
-
 .slider__arrow-l {
   position: absolute;
   top: calc(100% + 25px);
   left: 43%;
   cursor: pointer;
 }
-
 .slider__arrow-r {
   position: absolute;
   top: calc(100% + 25px);
