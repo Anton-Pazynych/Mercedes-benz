@@ -75,7 +75,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Corporate-A-Bold";
   font-style: normal;
   font-weight: 700;
-  src: url(../fonts/Corporate-A-Bold.woff2) format("woff2"), url(../fonts/Corporate-A-Bold.woff) format("woff");
+  src: url(./fonts/Corporate-A-Bold.woff) format("woff");
 }
 .text {
   font-family: "Roboto Condensed", sans-serif;
@@ -851,9 +851,10 @@ span:first-child {
   transition: 1s all ease;
 }
 .button-on:hover {
-  background: #53A1CB;
-  -webkit-box-shadow: 0 0 30px 20px #53A1CB;
-          box-shadow: 0 0 30px 20px #53A1CB;
+  background: #b8a8e9;
+  -webkit-box-shadow: 0 0 30px 20px #b8a8e9;
+          box-shadow: 0 0 30px 20px #b8a8e9;
+  opacity: 0.8;
 }
 
 .button-on span {
@@ -927,7 +928,7 @@ span:first-child {
   line-height: 46px;
 }
 .ii:hover {
-  color: #070A1B;
+  color: #b8a8e9;
   -webkit-transition: 1s all ease;
   transition: 1s all ease;
 }

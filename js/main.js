@@ -12,3 +12,7 @@ $(document).ready(function(){
 function openMenu(){
   document.getElementById("sidebar").classList.toggle('active')
 }
+
+function openMenu1(){
+  document.getElementById("a").classList.toggle('active1')
+}

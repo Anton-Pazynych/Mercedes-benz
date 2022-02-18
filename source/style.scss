@@ -498,8 +498,9 @@ span {
   border-radius: 50%;
   transition: 1s all ease;
   &:hover{
-    background: $hover_1;
-    box-shadow: 0 0 30px 20px $hover_1;
+    background: #b8a8e9;
+    box-shadow: 0 0 30px 20px #b8a8e9;
+    opacity: 0.8;
   }
 }
 
@@ -562,7 +563,7 @@ span {
   font-size: 40px;
   line-height: 46px;
   &:hover{
-    color: $dark;
+    color: #b8a8e9;
     transition: 1s all ease;
   }
 }
