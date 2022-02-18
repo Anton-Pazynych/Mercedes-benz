@@ -2,6 +2,7 @@
 @import "global.scss";
 
 
+
 .header {
   background: #070A1B;
 
@@ -15,13 +16,9 @@
       height: 80px;
     }
   }
-  &__button-img{
-    transition: .5s all ease;
-    &:hover{
-      background-color: #53a1cb2c;
-      transform: scale(1.05);
-      box-shadow: 0 0 30px $hover_1;
-    }
+
+  &__button{
+
   }
 
   &__logo {
@@ -367,15 +364,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 130px 0;
+    padding: 100px 0 50px 0;
     flex-wrap: wrap;
     gap: 60px;
     position: relative;
     @media(max-width:$breakpoints768){
-      padding: 100px 0;
+      padding: 100px 0 40px 0;
     }
     @media(max-width:$breakpoints488){
-      padding: 75px 0;
+      padding: 75px 0 40px 0;
       gap: 30px;
       justify-content: center;
     }
@@ -434,5 +431,138 @@
     top: calc(100% + 25px);
     right: 43%;
     cursor: pointer;
+  }
+}
+
+
+
+
+//Burger menu
+@keyframes menu{
+  0%{
+    opacity: 0;
+  }
+
+  50%{
+    opacity: 0.6;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
+#sidebar.active{
+	display: flex;
+  position: fixed;
+}
+
+
+span {
+  padding: 0 15px 0 0;
+	display: block;
+	width: 35px;
+	height: 3px;
+  background: #ffffff;
+  margin: 10px 0 0 0;
+  border-radius: 1.5px;
+  align-items: center;
+  transition: all ease 1s;
+  &:first-child{
+    margin: 0;
+  }
+
+}
+
+.button {
+  &:hover span{
+    background: #ffffff;
+    padding: 0;
+    box-shadow: 0 0 30px 10px $hover_1;
+    &:first-child{
+      transform: rotate(20deg) scale(1.15);
+    }
+    &:nth-child(2){
+      transform: rotate(-20deg);
+    }
+    &:last-child{
+      transform: rotate(20deg) scale(1.15);
+    }
+  }
+}
+
+
+.button-on {
+  background: #2c2a293f;
+  padding: 60px 20px;
+  border-radius: 50%;
+  transition: 1s all ease;
+  &:hover{
+    background: $hover_1;
+    box-shadow: 0 0 30px 20px $hover_1;
+  }
+}
+
+.button-on span{
+  position: relative;
+  background: #ffffff;
+  width: 80px;
+  margin: 0;
+  &:nth-child(2){
+    display: none;
+  }
+  &:nth-child(1){
+    transform: rotate(45deg);
+  }
+  &:nth-child(3){
+    transform: rotate(-45deg);
+  }
+}
+
+.menu-sl {
+  display: none;
+  z-index: 100;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%);
+
+
+  width: 30vw;
+  min-width: 500px;
+  height: 50vh;
+  border-radius: 20px;
+  border: 2px solid $hover_1;
+  
+  backdrop-filter: blur(7px) ;
+  transition: 1s all ease;
+  box-shadow: 0 0 100px 10px $hover_1;
+
+
+  animation-name:menu;
+  animation-duration: 2s;
+
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  @media(max-width:$breakpoints768){
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transform: translate(0);
+    border: none;
+  }
+  
+}
+
+.ii {
+  padding: 15px 0;
+  color: #ffffff;
+  font-size: 40px;
+  line-height: 46px;
+  &:hover{
+    color: $dark;
+    transition: 1s all ease;
   }
 }
