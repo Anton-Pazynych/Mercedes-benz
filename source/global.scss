@@ -17,6 +17,7 @@ $hover_2: #53A1CB;
 
 
 //-----Fonts
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 
 @font-face {
@@ -47,7 +48,6 @@ $hover_2: #53A1CB;
   color: $pink;
 }
 
-
 .btc {
   font-family: 'Corporate-A-Bold';
   font-style: normal;
@@ -66,7 +66,18 @@ $hover_2: #53A1CB;
     border: 1px solid $hover_1;
     box-shadow: 0 0 15px $hover_1;
     transform: scale(1.01);
+    & path{
+      fill: $hover_1;
+      transition: all 1s ease;
+    }
   }
+  & path {
+    transition: all 1s ease;
+  }
+}
+
+.main{
+  background: linear-gradient(180deg, #070A1B 0%, #15193b 50%, #070A1B 100%);
 }
 
 button {
@@ -75,13 +86,11 @@ button {
   padding: 0;
 }
 
-
 .container {
   max-width: 1260px;  
   margin: 0 auto;
   padding: 0 20px;
 }
-
 
 .logo {
   transition: 1s ease all; 
@@ -94,8 +103,7 @@ button {
   }
   @media(max-width:$breakpoints488){
     width: 150px;
-  }
-    
+  } 
 }
 
 .social {
@@ -125,7 +133,6 @@ button {
     }
   }
 }
-
 
 
 @keyframes bring{

@@ -2,9 +2,6 @@
 @import "global.scss";
 
 
-
-
-
 .header {
   background: #070A1B;
 
@@ -18,10 +15,6 @@
       height: 80px;
     }
   }
-
-  &__button {
-  }
-
   &__button-img{
     transition: .5s all ease;
     &:hover{
@@ -29,21 +22,15 @@
       transform: scale(1.05);
       box-shadow: 0 0 30px $hover_1;
     }
-
   }
 
   &__logo {
     transition: .5s all ease;
-
     @media(max-width:$breakpoints768){
     }
     @media(max-width:$breakpoints488){
       display:none;
     }
-    
-  }
-
-  &__social {
   }
 
   &__content {
@@ -109,17 +96,12 @@
 
   &__icon {
     width: 50px;
-    height: 50px;
-    
+    height: 50px; 
   }
-
 }
 
-
 .concept {
-  background: #070A1B;
   
-
   &__body {
     padding: 150px 0;
     max-width: 900px;
@@ -127,10 +109,6 @@
     @media(max-width:$breakpoints768){
       padding: 100px 0;;
     }
-    
-  }
-
-  &__title {
   }
 
   &__text {
@@ -168,12 +146,6 @@
       max-width: 100%;
     }
 
-    &_title {
-    }
-
-    &_text {
-    }
-
     &_img {
       max-width: 100%;
       transition: all 1s ease;
@@ -201,7 +173,6 @@
       gap: 60px;
     }
   
-
     &_img {
       max-width: 100%;
       transition: all 1s ease;
@@ -216,14 +187,12 @@
 }
 
 .video {
-  background: #070A1B;
 
   &__body {
     padding: 150px 0;
     @media(max-width:$breakpoints768){
       padding: 100px 0;;
     }
-    
   }
 
   &__img {
@@ -240,31 +209,11 @@
     display: flex;
     justify-content: center;
     gap: 10px;
-    align-items: center;
-    
-  }
-
-  &__btc-text {
-    // position: relative;
-    // &:after{
-    //   content: '';
-    //   width: 30px;
-    //   height: 30px;
-    //   position: absolute;
-    //   background-image: url(/img/video_arrow.svg);
-    //   background-repeat: no-repeat;
-    //   background-position: center;
-    //   top: -20%;
-    //   left: -40px;
-    // }
-  }
-
-  &__arrow {
+    align-items: center; 
   }
 }
 
 .interior {
-  background: #070A1B;
 
   &__body {
     display: flex;
@@ -350,9 +299,7 @@
       @media(max-width:$breakpoints488){
         width: 100%;
       }
-
-    }
-      
+    }   
   }
 }
 
@@ -362,7 +309,6 @@
 
 
 .vision {
-  background: #070A1B;
   padding: 150px 0;
   @media(max-width:$breakpoints768){
     padding: 100px 0;;
@@ -399,7 +345,6 @@
 }
 
 .botton-img {
-  background: #070A1B;
 
   &__bg {
     max-width: 100%;
@@ -413,7 +358,6 @@
 
   }
 }
-
 
 .footer {
   background: #070A1B;

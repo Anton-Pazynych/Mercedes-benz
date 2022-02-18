@@ -118,6 +118,20 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-transform: scale(1.01);
           transform: scale(1.01);
 }
+.btc:hover path {
+  fill: #53A1CB;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.btc path {
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.main {
+  background: -webkit-gradient(linear, left top, left bottom, from(#070A1B), color-stop(50%, #15193b), to(#070A1B));
+  background: linear-gradient(180deg, #070A1B 0%, #15193b 50%, #070A1B 100%);
+}
 
 button {
   background-color: transparent;
@@ -338,9 +352,6 @@ button {
   height: 50px;
 }
 
-.concept {
-  background: #070A1B;
-}
 .concept__body {
   padding: 150px 0;
   max-width: 900px;
@@ -367,9 +378,6 @@ button {
           box-shadow: 0 0 50px #53A1CB;
 }
 
-.premier {
-  background: #070A1B;
-}
 .premier__body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -449,9 +457,6 @@ button {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
-.video {
-  background: #070A1B;
-}
 .video__body {
   padding: 150px 0;
 }
@@ -482,9 +487,7 @@ button {
       -ms-flex-align: center;
           align-items: center;
 }
-.interior {
-  background: #070A1B;
-}
+
 .interior__body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -625,7 +628,6 @@ button {
 }
 
 .vision {
-  background: #070A1B;
   padding: 150px 0;
 }
 @media (max-width: 768.98px) {
@@ -674,9 +676,6 @@ button {
   }
 }
 
-.botton-img {
-  background: #070A1B;
-}
 .botton-img__bg {
   max-width: 100%;
   -webkit-animation-name: bring;
