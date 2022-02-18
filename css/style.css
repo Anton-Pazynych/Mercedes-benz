@@ -75,7 +75,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Corporate-A-Bold";
   font-style: normal;
   font-weight: 700;
-  src: url(/fonts/Corporate-A-Bold.woff2) format("woff2"), url(/fonts/Corporate-A-Bold.woff) format("woff");
+  src: url(../fonts/Corporate-A-Bold.woff2) format("woff2"), url(../fonts/Corporate-A-Bold.woff) format("woff");
 }
 .text {
   font-family: "Roboto Condensed", sans-serif;
