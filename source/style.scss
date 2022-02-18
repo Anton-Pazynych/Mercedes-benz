@@ -214,6 +214,7 @@
 }
 
 .interior {
+  padding-bottom: 100px;
 
   &__body {
     display: flex;
@@ -400,3 +401,37 @@
   }
 }
 
+
+
+.slider {
+  max-width: 100%;
+  margin: 0 auto;
+  position: relative;
+
+  &__body {
+    cursor: pointer;
+    transition: all 2s ease;
+    &:hover{
+    box-shadow: 0 0 50px 20px $hover_1;
+    background-color: #53a1cbc4;
+    transform: scale(1.01);
+   }
+  }
+
+  &__item {
+    padding: 0 20px;
+  }
+}
+
+.slider__arrow-l {
+  position: absolute;
+  top: calc(100% + 25px);
+  left: 43%;
+  cursor: pointer;
+}
+.slider__arrow-r {
+  position: absolute;
+  top: calc(100% + 25px);
+  right: 43%;
+  cursor: pointer;
+}
