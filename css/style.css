@@ -110,6 +110,10 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
 }
+.btc path {
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
 .btc:hover {
   color: #53A1CB;
   border: 1px solid #53A1CB;
@@ -118,12 +122,8 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-transform: scale(1.01);
           transform: scale(1.01);
 }
-.btc:hover img {
+.btc:hover path {
   fill: #53A1CB;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
-}
-.btc path {
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
 }
@@ -247,8 +247,8 @@ button {
   }
 }
 .header__logo {
-  -webkit-transition: 0.5s all ease;
-  transition: 0.5s all ease;
+  -webkit-transition: 1s all ease;
+  transition: 1s all ease;
 }
 @media (max-width: 479.98px) {
   .header__logo {
@@ -753,12 +753,12 @@ button {
   -webkit-transition: all 2s ease;
   transition: all 2s ease;
 }
-.slider__body:hover {
-  -webkit-box-shadow: 0 0 50px 20px #53A1CB;
-          box-shadow: 0 0 50px 20px #53A1CB;
-  background-color: #53a1cbc4;
-  -webkit-transform: scale(1.01);
-          transform: scale(1.01);
+.slider__body:active {
+  -webkit-box-shadow: 0 0 40px 10px #53A1CB;
+          box-shadow: 0 0 40px 10px #53A1CB;
+  background-color: #53a1cb9f;
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 .slider__item {
   padding: 0 20px;

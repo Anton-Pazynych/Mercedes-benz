@@ -61,19 +61,20 @@ $hover_2: #53A1CB;
   border: 1px solid $pink;
   padding: 14px 0;
   transition: all 1s ease;
+  & path {
+    transition: all 1s ease;
+  }
   &:hover{
     color: $hover_1;
     border: 1px solid $hover_1;
     box-shadow: 0 0 15px $hover_1;
     transform: scale(1.01);
-    & img{
+    & path{
       fill: $hover_1;
       transition: all 1s ease;
     }
   }
-  & path {
-    transition: all 1s ease;
-  }
+
 }
 
 .main{

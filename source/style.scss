@@ -22,7 +22,7 @@
   }
 
   &__logo {
-    transition: .5s all ease;
+    transition: 1s all ease;
     @media(max-width:$breakpoints768){
     }
     @media(max-width:$breakpoints488){
@@ -408,10 +408,10 @@
   &__body {
     cursor: pointer;
     transition: all 2s ease;
-    &:hover{
-    box-shadow: 0 0 50px 20px $hover_1;
-    background-color: #53a1cbc4;
-    transform: scale(1.01);
+    &:active{
+      box-shadow: 0 0 40px 10px $hover_1;
+      background-color: #53a1cb9f;
+      transform: scale(1);
     }
   }
 
@@ -436,8 +436,8 @@
 
 
 
-
 //Burger menu
+
 @keyframes menu{
   0%{
     opacity: 0;
